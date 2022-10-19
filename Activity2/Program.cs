@@ -76,12 +76,36 @@
                 swap(low, j);
                 mov_count++;
             }
-               
-                
-              
+            q_sort(low, j - 1);
+            q_sort(j + 1, high);
+        }
+        void display()
+        {
+            Console.WriteLine("==============================="+ cmp_count);
+            Console.WriteLine(" Sorted Array elements ");
+            Console.WriteLine("============================================");
+
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(arr[j]);
+            }
+            Console.WriteLine("\nNumber of comparisons: " + cmp_count);
+            Console.WriteLine("\nNumber of data movements: " + mov_count);
+        }
+        int getSize()
+        {
+            return (n);
+        }
+        static void Main(string[] args)
+        { 
 
 
 
-    }
+
+
+
+
+
+        }
 }
 
