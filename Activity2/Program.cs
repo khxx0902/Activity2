@@ -66,6 +66,19 @@
                 cmp_count++;
 
                 if (i < j)
+                {
+                    swap(i, j);
+                    mov_count++;
+                }
+            }
+            if (low < j)
+            {
+                swap(low, j);
+                mov_count++;
+            }
+               
+                
+              
 
 
 
