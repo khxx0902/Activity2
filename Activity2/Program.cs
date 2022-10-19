@@ -36,7 +36,21 @@
                 arr[1] = Int32.Parse(s1);
             }
         }
-        //swaps the
+        //swaps the element at index x with the element at index y
+        void swap(int x, int y)
+        {
+            int temp;
+
+            temp = arr[x];
+            arr[x] = arr[y];
+            arr[y] = temp;
+        }
+        public void q_sort(int low, int high)
+        {
+            int pivot, i, j;
+            if (low > high)
+                return;
+        }
 
 
     }
